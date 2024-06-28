@@ -6,35 +6,42 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Registration</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div>
+<div class="modal">
     <a href="#" title="cancel-img"><img src="images/Frame%201.svg" alt="cancel-img"></a>
-    <h1>Login | Register</h1>
-    <p>Enter your email and password to register.</p>
+    <div class="title">
+        <a href="#" title="Login">Login</a><span> | </span><a href="#" title="Register">Register</a>
+    </div>
+    <p class="text mrg-left">Enter your email and password to register.</p>
     <form name="user-information" method="get" action="">
-        <div>
+        <div class="mrg-left">
             <input name="Username" type="text" placeholder="Username" id="Username">
         </div>
-        <div>
+        <div class="mrg-left">
             <input name="Email" type="email" placeholder="Enter your email address" id="Email">
         </div>
-        <div>
+        <div class="mrg-left">
             <input name="password" type="password" placeholder="Password" id="password">
         </div>
-        <div>
+        <div class="mrg-left">
             <input name="password" type="password" placeholder="Confirm Password" id="confirm-password">
         </div>
-        <div>
-            <button type="submit">Register</button>
+        <div class="mrg-left">
+            <button type="submit"><span>Register</span></button>
         </div>
     </form>
-    <p>Or register with</p>
-    <a href="https://Google.com" title="google" target="_blank"><img src="images/google%201.svg" alt="google">Continue
-        with Google</a>
-
+    <p class="text align-cent">Or register with</p>
+    <div class="social-links align-cent mrg-left">
+    <a href="https://Google.com" title="google" target="_blank"><img src="images/google%201.svg" alt="google"><span>Continue
+        with Google</span></a>
+</div>
+    <div class="social-links align-cent mrg-left">
     <a href="https://facebook.com" title="facebook" target="_blank"><img src="images/facebook%201.svg"
-                                                                         alt="facebook">Continue with Facebook</a>
+                                                                         alt="facebook"><span>Continue with Facebook</span></a>
+    </div>
+        <div class="green-background"></div>
 </div>
 </body>
 </html>
