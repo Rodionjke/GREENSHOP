@@ -1,3 +1,74 @@
+
+
+@font-face {
+    font-family: 'cera_problack';
+    src: url('../fonts/cerapro-black-webfont.eot');
+    src: url('../fonts/cerapro-black-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-black-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-black-webfont.woff') format('woff'),
+    url('../fonts/cerapro-black-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cera_probold';
+    src: url('../fonts/cerapro-bold-webfont.eot');
+    src: url('../fonts/cerapro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-bold-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-bold-webfont.woff') format('woff'),
+    url('../fonts/cerapro-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cera_promedium';
+    src: url('../fonts/cerapro-medium-webfont.eot');
+    src: url('../fonts/cerapro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-medium-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-medium-webfont.woff') format('woff'),
+    url('../fonts/cerapro-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cera_proregular';
+    src: url('../fonts/cerapro-regular-webfont.eot');
+    src: url('../fonts/cerapro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-regular-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-regular-webfont.woff') format('woff'),
+    url('../fonts/cerapro-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cera_prothin';
+    src: url('../fonts/cerapro-thin-webfont.eot');
+    src: url('../fonts/cerapro-thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cerapro-thin-webfont.woff2') format('woff2'),
+    url('../fonts/cerapro-thin-webfont.woff') format('woff'),
+    url('../fonts/cerapro-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -17,6 +88,7 @@
 }
 
 .modal .title a {
+    font-family: "cera_promedium";
     font-weight: 500;
     font-size: 20px;
     line-height: 80%;
@@ -25,6 +97,7 @@
 }
 
 .modal .title span {
+    font-family: "cera_prothin";
     font-weight: 250;
     font-size: 18px;
     line-height: 89%;
@@ -37,6 +110,7 @@
 }
 
 .text {
+    font-family: "cera_proregular";
     font-weight: 400;
     font-size: 13px;
     line-height: 123%;
@@ -59,6 +133,7 @@
 }
 
 .modal input::placeholder {
+    font-family: "cera_proregular";
     font-weight: 400;
     font-size: 14px;
     line-height: 114%;
@@ -81,7 +156,7 @@
     font-size: 16px;
     line-height: 100%;
     color: #fff;
-
+    font-family: "cera_probold";
 }
 
 .align-cent {
@@ -114,6 +189,7 @@
 }
 
 .social-links span {
+    font-family: "cera_promedium";
     font-weight: 500;
     font-size: 13px;
     line-height: 123%;
@@ -128,7 +204,7 @@
 }
 
 header {
-    padding: 31px 120px 0 120px;
+    padding-top: 31px;
     margin-bottom: 12px;
 }
 
@@ -146,28 +222,34 @@ header nav {
 header ul {
     display: flex;
     align-items: center;
-
-}
+    gap: 50px;
 header li{
-    margin-right: 50px;
+    min-width: 100px;
+    text-align: center;
 }
-header li:last-of-type{
-    margin: 0;
 }
+/*Или можно*/
+/*header li{*/
+/*    !*margin-right: 50px;*!*/
+/*}*/
+/*header li:last-of-type{*/
+/*    margin: 0;*/
 .header-links {
+    font-family: "cera_proregular";
     font-weight: 400;
     font-size: 16px;
     color: #3d3d3d;
     text-decoration: none;
 }
 .header-links:hover {
+    font-family: "cera_probold";
     font-weight: 700;
 }
 
 .login-btn {
     border-radius: 6px;
     background: #46a358;
-    padding: 7px 17px;
+    padding: 8px 17px 7px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -175,8 +257,127 @@ header li:last-of-type{
     font-weight: 500;
     font-size: 16px;
     color: #fff;
+    font-family: "cera_promedium";
 }
 
 .login-btn img {
     margin-right: 4px;
+}
+main{
+    padding-bottom: 52px;
+}
+.main-container{
+    max-width: 1200px;
+    margin: auto;
+    background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
+    padding-left: 43px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 46px;
+}
+.main-text{
+    max-width: 700px;
+    margin-bottom: 85px;
+    padding-top: 68px;
+}
+.main-title{
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    margin-bottom: 5px;
+    font-family: "cera_problack";
+}
+.main-title span{
+    color: #46a358;
+}
+.lower-title{
+    font-family: "cera_promedium";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    margin-bottom: 7px;
+}
+.main-description{
+    font-family: "cera_proregular";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #727272;
+    margin-bottom: 44px;
+    width: 557px;
+}
+.shop-now-btn {
+    border-radius: 6px;
+    height: 40px;
+    padding: 11px 27px 9px 26px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    background: #46a358;
+    text-decoration: none;
+    font-family: "cera_probold";
+}
+.main-img{
+    max-width: 500px;
+    height: 450px;
+    position: relative;
+}
+.small-cup{
+    position: absolute;
+    bottom: 17px;
+    left: 55px;
+}
+.product-container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.list-of-categories{
+    max-width: 310px;
+    background: #fbfbfb;
+    padding-top: 14px;
+}
+.main-products{
+    max-width: 890px;
+}
+.list-title{
+    font-family: "cera_probold";
+    padding-left: 18px;
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+}
+.list-of-categories ul{
+    padding-left: 30px;
+    margin-bottom: 380px;
+}
+
+.list-of-categories a{
+    font-family: "cera_proregular";
+    font-weight: 400;
+    color: #3d3d3d;
+    font-size: 15px;
+    line-height: 267%;
+    text-decoration: none;
+}
+.list-of-categories a:hover{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 267%;
+    color: #46a358;
+}
+.Banner-img{
+    display: flex;
+    justify-content: center;
 }
