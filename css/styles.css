@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: 'cera_problack';
     src: url('../fonts/cerapro-black-webfont.eot');
@@ -9,11 +7,7 @@
     url('../fonts/cerapro-black-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
 
 @font-face {
     font-family: 'cera_probold';
@@ -28,8 +22,6 @@
 }
 
 
-
-
 @font-face {
     font-family: 'cera_promedium';
     src: url('../fonts/cerapro-medium-webfont.eot');
@@ -41,8 +33,6 @@
     font-style: normal;
 
 }
-
-
 
 
 @font-face {
@@ -139,6 +129,7 @@
     line-height: 114%;
     color: #a5a5a5;
 }
+
 .modal button {
     width: 300px;
     height: 45px;
@@ -223,11 +214,13 @@ header ul {
     display: flex;
     align-items: center;
     gap: 50px;
-header li{
-    min-width: 100px;
-    text-align: center;
+
+    header li {
+        min-width: 100px;
+        text-align: center;
+    }
 }
-}
+
 /*Или можно*/
 /*header li{*/
 /*    !*margin-right: 50px;*!*/
@@ -241,6 +234,7 @@ header li{
     color: #3d3d3d;
     text-decoration: none;
 }
+
 .header-links:hover {
     font-family: "cera_probold";
     font-weight: 700;
@@ -263,10 +257,12 @@ header li{
 .login-btn img {
     margin-right: 4px;
 }
-main{
+
+main {
     padding-bottom: 52px;
 }
-.main-container{
+
+.main-container {
     max-width: 1200px;
     margin: auto;
     background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
@@ -275,12 +271,14 @@ main{
     justify-content: space-between;
     margin-bottom: 46px;
 }
-.main-text{
+
+.main-text {
     max-width: 700px;
     margin-bottom: 85px;
     padding-top: 68px;
 }
-.main-title{
+
+.main-title {
     font-weight: 900;
     font-size: 70px;
     line-height: 100%;
@@ -289,10 +287,12 @@ main{
     margin-bottom: 5px;
     font-family: "cera_problack";
 }
-.main-title span{
+
+.main-title span {
     color: #46a358;
 }
-.lower-title{
+
+.lower-title {
     font-family: "cera_promedium";
     font-weight: 500;
     font-size: 14px;
@@ -302,7 +302,8 @@ main{
     color: #3d3d3d;
     margin-bottom: 7px;
 }
-.main-description{
+
+.main-description {
     font-family: "cera_proregular";
     font-weight: 400;
     font-size: 14px;
@@ -311,6 +312,7 @@ main{
     margin-bottom: 44px;
     width: 557px;
 }
+
 .shop-now-btn {
     border-radius: 6px;
     height: 40px;
@@ -325,31 +327,37 @@ main{
     text-decoration: none;
     font-family: "cera_probold";
 }
-.main-img{
+
+.main-img {
     max-width: 500px;
     height: 450px;
     position: relative;
 }
-.small-cup{
+
+.small-cup {
     position: absolute;
     bottom: 17px;
     left: 55px;
 }
-.product-container{
+
+.product-container {
     max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-between;
 }
-.list-of-categories{
+
+.list-of-categories {
     max-width: 310px;
     background: #fbfbfb;
     padding-top: 14px;
 }
-.main-products{
+
+.main-products {
     max-width: 890px;
 }
-.list-title{
+
+.list-title {
     font-family: "cera_probold";
     padding-left: 18px;
     margin-bottom: 18px;
@@ -358,12 +366,13 @@ main{
     line-height: 89%;
     color: #3d3d3d;
 }
-.list-of-categories ul{
+
+.list-of-categories ul {
     padding-left: 30px;
     margin-bottom: 380px;
 }
 
-.list-of-categories a{
+.list-of-categories a {
     font-family: "cera_proregular";
     font-weight: 400;
     color: #3d3d3d;
@@ -371,13 +380,15 @@ main{
     line-height: 267%;
     text-decoration: none;
 }
-.list-of-categories a:hover{
+
+.list-of-categories a:hover {
     font-weight: 700;
     font-size: 15px;
     line-height: 267%;
     color: #46a358;
 }
-.Banner-img{
+
+.Banner-img {
     display: flex;
     justify-content: center;
 }
