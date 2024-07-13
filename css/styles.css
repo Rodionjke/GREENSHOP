@@ -463,6 +463,10 @@ main {
 .product-cards{
     display: flex;
     flex-direction: column;
+    border-top: solid 1px transparent;
+}
+.product-cards:hover{
+    border-top: solid 1px #46A358;
 }
 .product-cards img{
     height: 250px;
