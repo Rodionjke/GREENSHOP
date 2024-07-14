@@ -214,13 +214,16 @@ header nav {
 header ul {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
 }
 header li {
-        min-width: 76px;
-        text-align: center;
+    min-width: 45px;
+    text-align: center;
     }
-
+header li:nth-of-type(3) {
+    min-width: 76px;
+    text-align: center;
+}
 /*Или можно*/
 /*header li{*/
 /*    !*margin-right: 50px;*!*/
@@ -402,11 +405,17 @@ main {
 
 .tabs ul{
     display: flex;
-    gap: 38px;
+    gap: 37px;
 }
 .tabs li{
-    min-width: 88px;
+    min-width: 66px;
     text-align: center;
+}
+.tabs li:nth-of-type(2){
+    min-width: 88px;
+}
+.tabs li:nth-of-type(3){
+    min-width: 30px;
 }
 .tabs a{
     font-weight: 400;
@@ -455,7 +464,6 @@ main {
 }
 .product-block{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     gap: 70px 33px;
     margin-bottom: 90px;
@@ -535,6 +543,9 @@ main {
     content: "";
     height: 18px;
     width: 18px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 .list-numbers:hover{
     font-family: cera_probold;
@@ -543,9 +554,11 @@ main {
     line-height: 89%;
     color: #fff;
     background: #46a358;
+    border: solid 1px transparent;
 }
 .last-list-number:hover {
     background: #46a358;
+    border: solid 1px transparent;
 }
 .last-list-number:hover:before{
     background-image: url("../images/Arrow-Right2.svg");
@@ -565,6 +578,7 @@ main {
 .product-variants{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #fbfbfb;
     padding-right: 35px;
     max-width: 586px;
@@ -575,7 +589,6 @@ main {
     top: -52px;
 }
 .summer-collection-text{
-    margin-top: 37px;
     font-family: cera_proregular;
     font-weight: 400;
     font-size: 14px;
@@ -603,7 +616,8 @@ main {
 .find-more-btn{
     font-family: "cera_promedium";
     border-radius: 6px;
-    width: 140px;
+    border: solid 1px transparent;
+    padding: 11px 28px;
     height: 40px;
     background: #46a358;
     display: inline-flex;
@@ -614,7 +628,14 @@ main {
     font-size: 14px;
     color: #fff;
     line-height: 143%;
+    transition: 0.5s;
 }
+.find-more-btn:hover{
+    background: bisque;
+    color: black;
+    border: solid 1px;
+}
+
 .find-more-btn:after{
     background-image: url("../images/full-arrow-right.svg");
     background-repeat: no-repeat;
@@ -622,7 +643,16 @@ main {
     height: 18px;
     width: 18px;
     margin-left: 6px;
-    padding-bottom: 2px;
+    margin-top: 4px;
+    transition: 0.5s;
+}
+.find-more-btn:hover:after {
+    background-image: url("../images/full-arrow-right_black.svg");
+    background-repeat: no-repeat;
+    content: "";
+    height: 18px;
+    width: 18px;
+    display: flex;
 }
 .blog-title {
     font-family: cera_probold;
