@@ -8,17 +8,36 @@
     <title>Greenshop</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
     <div class="container">
         <a href="#" title="Main-logo"><img src="images/Logo.svg" alt="main-logo"></a>
         <nav>
-            <ul>
-                <li><a href="#" title="Home" class="header-links">Home</a></li>
-                <li><a href="#" title="Shop" class="header-links">Shop</a></li>
-                <li><a href="#" title="Plant care" class="header-links">Plant care</a></li>
-                <li><a href="#" title="Blogs" class="header-links">Blogs</a></li>
+            <ul class="header-dropdown">
+                <li class="header-list"><a href="#" title="Home" class="header-links">Home</a></li>
+                <li class="header-list"><a href="#" title="Shop" class="header-links">Shop</a></li>
+                <li class="dropdown header-list"><a href="#" title="Plant care" class="header-links min-width">Plant care</a>
+                <ul class="header-dropdown-2">
+                    <li class="header-list_2"><a href="#" title="Drainage" class="header-list-title">Drainage</a></li>
+                    <li class="header-list_2"><a href="#" title="Fungicides"class="header-list-title">Fungicides</a></li>
+                    <li class="header-list_2"><a href="#" title="Fertilizer"class="header-list-title">Fertilizer</a></li>
+                    <li class="header-list_2 dropdown_2"><a href="#" title="Priming" class="header-list-title">Priming</a>
+                        <ul class="header-dropdown-3">
+                            <li class="header-list_3"><a href="#" title="Universal">Universal</a></li>
+                            <li class="header-list_3"><a href="#" title="For Ficus">For Ficus</a></li>
+                            <li class="header-list_3"><a href="#" title="For Cacti">For Cacti</a></li>
+                            <li class="header-list_3"><a href="#" title="For Citrus">For Citrus</a></li>
+                            <li class="header-list_3"><a href="#" title="For those in bloom">For those in bloom</a></li>
+                            <li class="header-list_3"><a href="#" title="For Orchids">For Orchids</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                <li class="header-list"><a href="#" title="Blogs" class="header-links">Blogs</a></li>
             </ul>
         </nav>
         <a href="#" title="Login" class="login-btn">Login</a>
@@ -35,8 +54,10 @@
                     plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
                 <a href="#" title="shop-now" class="shop-now-btn">SHOP NOW</a>
             </div>
-            <div class="main-img"><img src="images/011.png" alt="Big cup">
-                <img src="images/012.png" alt="small cup" class="small-cup"></div>
+            <div class="main-img">
+                <img src="images/012.png" alt="small cup" class="small-cup" style="width: 135px; height: 135px;">
+                <img src="images/011.png" alt="Big cup" class="big-cup" style="width: 507px; height: 450px;">
+            </div>
         </div>
     </section>
     <section class="product-section">
@@ -56,7 +77,7 @@
                     <li><a href="#" title="Accessories">Accessories</a></li>
                 </ul>
                 </div>
-                    <img src="images/banner_super_sale.png" alt="SuperSaleBanner">
+                    <img src="images/banner_super_sale.png" alt="SuperSaleBanner" style="width: 310px; height: 470px;">
             </div>
             <div class="main-products">
                 <div class="tabs-container">
@@ -70,31 +91,38 @@
                         <p class="sort-part"> Short by: Default sorting </p>
                 </div>
                 <div class="product-block">
-                    <article class="product-cards"><a href="#" title="Product1" class="product-cell"><img src="images/image_1.png" alt="product1"></a>
+                    <article class="product-cards"><a href="#" title="Product1" class="product-cell"><img src="images/image_1.png" alt="product1" style="width: 250px; height: 250px;"></a>
                         <a href="#" title="product-name" class="product-name">Barberton Daisy</a>
                         <p>$199.00</p></article>
-                    <article class="product-cards"><a href="#" title="Product2" class="product-cell"><img src="images/product-21.png" alt="product2"></a>
+                    <article class="product-cards"><a href="#" title="Product2" class="product-cell">
+                        <img src="images/product-21.png" alt="product2" style="width: 250px; height: 250px;"></a>
+                        <ul class="vectors-list">
+                            <li><a href="#" class="vectors_1"></a></li>
+                            <li><a href="#" class="vectors_2"></a></li>
+                            <li><a href="#" class="vectors_3"></a></li>
+                        </ul>
                         <a href="#" title="product-name" class="product-name">Angel Wing Begonia</a>
                         <p>$169.00</p></article>
-                    <article class="product-cards"><a href="#" title="Product3" class="product-cell"><img src="images/image_2.png" alt="product3"></a>
+                    <article class="product-cards"><span class="sale">13% OFF</span>
+                        <a href="#" title="Product3" class="product-cell"><img src="images/image_2.png" alt="product3" style="width: 250px; height: 250px;"></a>
                         <a href="#" title="product-name" class="product-name">African Violet</a>
-                        <p>$199.00</p></article>
-                    <article class="product-cards"><a href="#" title="Product4" class="product-cell"><img src="images/013.png" alt="product4"></a>
+                        <p>$199.00</p><span class="old-price">$229.00</span></article>
+                    <article class="product-cards"><a href="#" title="Product4" class="product-cell"><img src="images/013.png" alt="product4" style="width: 250px; height: 250px;"></a>
                         <a href="#" title="product-name" class="product-name">Beach Spider Lily</a>
                         <p>$129.00</p></article>
-                    <article class="product-cards"><a href="#" title="Product5" class="product-cell"><img src="images/image_7.png" alt="product5"></a>
+                    <article class="product-cards"><a href="#" title="Product5" class="product-cell"><img src="images/image_7.png" alt="product5" style="width: 250px; height: 250px;"></a>
                         <a href="#" title="product-name" class="product-name">Blushing Bromeliad</a>
                         <p>$139.00</p></article>
-                    <article class="product-cards"><a href="#" title="Product6" class="product-cell"><img src="images/image_8.png" alt="product6"></a>
+                    <article class="product-cards"><a href="#" title="Product6" class="product-cell"><img src="images/image_8.png" alt="product6" style="width: 250px; height: 250px;"></a>
                         <a href="#" title="product-name" class="product-name">Aluminum Plant</a>
                         <p>$179.00</p></article>
-                    <article class="product-cards"><a href="#" title="Product7" class="product-cell"><img src="images/image_9.png" alt="product7"></a>
+                    <article class="product-cards"><a href="#" title="Product7" class="product-cell"><img src="images/image_9.png" alt="product7" style="width: 250px; height: 250px;"></a>
                         <a href="#" title="product-name" class="product-name">Bird's Nest Fern</a>
                         <p>$99.00</p></article>
-                    <article class="product-cards"><a href="#" title="Product8" class="product-cell"><img src="images/product-20.png" alt="product8"></a>
+                    <article class="product-cards"><a href="#" title="Product8" class="product-cell"><img src="images/product-20.png" alt="product8" style="width: 250px; height: 250px;"></a>
                         <a href="#" title="product-name" class="product-name">Broadleaf Lady Palm</a>
                         <p>$59.00</p></article>
-                    <article class="product-cards"><a href="#" title="Product9" class="product-cell"><img src="images/image_10.png" alt="product9"></a>
+                    <article class="product-cards"><a href="#" title="Product9" class="product-cell"><img src="images/image_10.png" alt="product9" style="width: 250px; height: 250px;"></a>
                         <a href="#" title="product-name" class="product-name">Chinese Evergreen</a>
                         <p>$39.00</p></article>
                 </div>
@@ -112,14 +140,14 @@
     </section>
     <section class="summer-collection">
         <div class="container">
-            <article class="product-variants"><img src="images/image_14.png" alt="image141">
+            <article class="product-variants"><img src="images/image_14.png" alt="image141" style="width: 292px; height: 292px;">
             <div class="summer-collection-text">
                 <h3>Summer cactus & succulents</h3>
                 <p>We are an online plant shop offering a wide range of cheap and trendy plants</p>
                 <a href="#" class="find-more-btn">Find more</a>
             </div>
             </article>
-            <article class="product-variants"><img src="images/image_15.png" alt="image151">
+            <article class="product-variants"><img src="images/image_15.png" alt="image151" style="width: 287px; height: 287px;">
                 <div class="summer-collection-text">
                     <h3>Styling Trends
                         & much more</h3>
@@ -134,17 +162,17 @@
         <h2 class="blog-title">Our Blog Posts</h2>
         <p class="blog-description">We are an online plant shop offering a wide range of cheap and trendy plants. </p>
         <div class="card-collection">
-            <article><img src="images/01.png" alt="01"><div class="pdn-lft"><p class="card-date">September 12  I Read in 6 minutes</p><h3 class="card-title">Cactus & Succulent
+            <article><img src="images/01.png" alt="01" style="width: 268px; height: 195px;"><div class="pdn-lft"><p class="card-date">September 12  I Read in 6 minutes</p><h3 class="card-title">Cactus & Succulent
                 Care Tips</h3><p class="card-description">Cacti are succulents are easy care plants for any home or patio.</p>
             <a href="#" class="read-more-link">Read more</a></div>
             </article>
-            <article><img src="images/02.png" alt="02"><div class="pdn-lft"><p class="card-date">September 13  I Read in 2 minutes</p><h3 class="card-title">Top 10 Succulents for
+            <article><img src="images/02.png" alt="02" style="width: 268px; height: 195px;"><div class="pdn-lft"><p class="card-date">September 13  I Read in 2 minutes</p><h3 class="card-title">Top 10 Succulents for
                 Your Home</h3><p class="card-description">Best in hanging baskets. Prefers medium to high light.</p>
                 <a href="#" class="read-more-link">Read more</a></div></article>
-            <article><img src="images/03.png" alt="03"><div class="pdn-lft"><p class="card-date">September 15  I Read in 3 minutes</p><h3 class="card-title">Cacti & Succulent
+            <article><img src="images/03.png" alt="03" style="width: 268px; height: 195px;"><div class="pdn-lft"><p class="card-date">September 15  I Read in 3 minutes</p><h3 class="card-title">Cacti & Succulent
                 Care Tips</h3><p class="card-description">Cacti and succulents thrive in containers and because most are..</p>
                 <a href="#" class="read-more-link">Read more</a></div></article>
-            <article><img src="images/04.png" alt="04"><div class="pdn-lft"><p class="card-date">September 15  I Read in 2 minutes</p><h3 class="card-title">Best Houseplants
+            <article><img src="images/04.png" alt="04" style="width: 268px; height: 195px;"><div class="pdn-lft"><p class="card-date">September 15  I Read in 2 minutes</p><h3 class="card-title">Best Houseplants
                 Room by Room</h3><p class="card-description">The benefits of houseplants are endless. In addition to..</p>
                 <a href="#" class="read-more-link">Read more</a></div></article>
         </div>
