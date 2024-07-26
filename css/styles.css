@@ -70,15 +70,20 @@
     margin: auto;
     padding: 52px 100px 40px;
     border-bottom: solid 10px #46A358;
+    position: relative;
 }
 
 .modal .title {
     text-align: center;
     margin-bottom: 40px;
 }
-
+.cancer-img{
+    position: absolute;
+    right: 13px;
+    top: 13px;
+}
 .modal .title a {
-    font-family: "cera_promedium";
+    font-family: cera_promedium;
     font-weight: 500;
     font-size: 20px;
     line-height: 80%;
@@ -87,7 +92,7 @@
 }
 
 .modal .title span {
-    font-family: "cera_prothin";
+    font-family: cera_prothin;
     font-weight: 250;
     font-size: 18px;
     line-height: 89%;
@@ -100,7 +105,7 @@
 }
 
 .text {
-    font-family: "cera_proregular";
+    font-family: cera_proregular;
     font-weight: 400;
     font-size: 13px;
     line-height: 123%;
@@ -115,15 +120,43 @@
     border: 1px solid #eaeaea;
     border-radius: 5px;
     padding: 12px 14px;
-
+    position: relative;
 }
 
 .last-input {
     margin-bottom: 40px;
 }
+.input-password{
+    position: relative;
+}
+.hide-img:before{
+    background-image: url("../images/Hide.svg");
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    content: "";
+    top: 10px;
+    right: 10px;
+}
+.input-password a:active:before{
+    background-image: url("../images/Hide2.svg");
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    content: "";
+    top: 10px;
+    right: 10px;
+}
+form svg {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
 
 .modal input::placeholder {
-    font-family: "cera_proregular";
+    font-family: cera_proregular;
     font-weight: 400;
     font-size: 14px;
     line-height: 114%;
@@ -140,6 +173,7 @@
     padding-top: 16px;
     padding-bottom: 13px;
     text-align: center;
+    cursor: pointer;
 }
 
 .modal button span {
@@ -578,6 +612,32 @@ header .header-dropdown {
     position: absolute;
     left: 0;
     top: 14px;
+    animation: position 10s infinite;
+}
+
+@keyframes position {
+    0% {
+        left: 0;
+        top: 14px;
+        background: #46a358;
+    }
+    25% {
+        left: 0;
+        top: 250px;
+        background: red;
+    }
+    50%{
+
+        left: 170px;
+        top: 14px;
+        background: red;
+    }
+    75%{
+
+        left: 170px;
+        top: 250px;
+        background: #46a358;
+    }
 }
 
 .product-cards:hover{
@@ -836,7 +896,6 @@ header .header-dropdown {
     align-items: center;
     height: 18px;
     width: 18px;
-    display: flex;
 }
 .blog{
     margin-bottom: 100px;
@@ -1196,4 +1255,143 @@ header .header-dropdown {
     color: #3d3d3d;
     margin-bottom: 25px;
     text-align: center;
+}
+
+.preloader-background{
+    background: #3d3d3d;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    animation: fade-away 6s forwards;
+
+}
+.preloader-background:before{
+    background-image: url("../images/Logo-white.svg");
+    height: 35px;
+    width: 150px;
+    display: flex;
+    transform: scale(200%);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: preloader1 6s;
+}
+@keyframes preloader1 {
+
+    10% {
+        background-image: url("../images/Logo9.svg");
+        background-repeat: no-repeat;
+        height: 35px;
+        width: 150px;
+        display: flex;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        }
+    20%{
+
+        background-image: url("../images/Logo1.svg");
+        height: 35px;
+        width: 150px;
+        display: flex;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    30%{
+        background-image: url("../images/Logo2.svg");
+        height: 35px;
+        width: 150px;
+        display: flex;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    40%{
+        background-image: url("../images/Logo3.svg");
+        height: 35px;
+        width: 150px;
+        display: flex;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        }
+    50%{
+        background-image: url("../images/Logo4.svg");
+        height: 35px;
+        width: 150px;
+        display: flex;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        rotate: 360deg;
+    }
+    60%{
+        background-image: url("../images/Logo5.svg");
+        height: 35px;
+        width: 150px;
+        display: flex;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    70%{
+        background-image: url("../images/Logo6.svg");
+        height: 35px;
+        width: 150px;
+        display: flex;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    80%{
+        background-image: url("../images/Logo7.svg");
+        height: 35px;
+        width: 150px;
+        display: flex;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    90%{
+        background-image: url("../images/Logo8.svg");
+        height: 35px;
+        width: 150px;
+        display: flex;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    100%{
+            background-image: url("../images/Logo.svg");
+            height: 35px;
+            width: 150px;
+            display: flex;
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+}
+@keyframes fade-away {
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
 }
