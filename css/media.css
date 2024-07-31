@@ -1,0 +1,277 @@
+@media only screen and (max-width: 1025px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    header .container {
+        padding-bottom: 10px;
+    }
+
+    .main-text {
+        max-width: 55%;
+    }
+
+    .main-img {
+        max-width: 45%;
+    }
+
+    .big-cup {
+        position: relative;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .adapt-big-cup {
+        position: relative;
+        right: 150px;
+    }
+
+    .small-cup {
+        left: 35px;
+        bottom: 35px;
+    }
+
+    .main-title {
+        font-size: 60px;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev {
+        display: none;
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        display: none;
+    }
+
+    .sort-part {
+        margin-right: 31px;
+    }
+
+    .list-pagination ul {
+        margin-right: 20px;
+    }
+
+    .summer-collection .container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card-collection {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .card-collection article {
+        background: #fbfbfb;
+        padding: 10px;
+        max-width: 450px;
+        align-items: center;
+        display: flex;
+    }
+
+    .card-date {
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .card-title {
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .card-description {
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .read-more-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .find-more-btn {
+        text-align: center;
+        line-height: 1;
+    }
+
+    .read-more-link:after {
+        margin-top: 1px;
+        padding: 0;
+    }
+
+    .news .container {
+        gap: 100px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .news-cards {
+        text-align: center;
+        position: relative;
+        max-width: 227px;
+        margin: 0;
+    }
+
+    .news-cards:after {
+        right: -65px;
+    }
+
+    .our-services .container {
+        padding: 33px 33px 33px;
+    }
+}
+@media only screen and (max-width: 993px) {
+    .adapt-big-cup {
+        position: relative;
+        right: 165px;
+    }
+    .small-cup{
+        left: 30px;
+    }
+    .find-more-btn:after{
+        width: 25px;
+    }
+    .find-more-btn{
+        padding: 11px 11px;
+    }
+}
+@media only screen and (max-width: 835px) {
+    .lower-title {
+        font-size: 13px;
+    }
+
+    .main-title {
+        font-size: 45px;
+    }
+
+    .main-description {
+        font-size: 13px;
+        width: 350px;
+    }
+
+    .main-img {
+        align-items: center;
+    }
+
+    .big-cup {
+        width: 400px !important;
+        height: 400px !important;
+    }
+
+    .small-cup {
+        left: -20px;
+        bottom: -100px;
+    }
+
+    .tabs-container {
+        gap: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .tabs ul {
+        gap: 25px;
+    }
+
+    .summer-collection .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 65px;
+    }
+
+    .product-block {
+        justify-content: center;
+    }
+
+    .news .container {
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 35px;
+    }
+
+    .news-cards:after {
+        display: none;
+    }
+
+    .news-banner h5 {
+        max-width: 26%;
+    }
+
+    .news-contact-address:before {
+        width: 35px;
+        margin-top: 10px;
+    }
+
+    @media only screen and (max-width: 821px) {
+        .big-cup {
+            width: 390px !important;
+            height: 390px !important;
+        }
+
+        .main-text {
+            padding-left: 2px;
+        }
+
+        .news .container {
+            gap: 40px;
+        }
+
+        .news-contact-email:before {
+            margin-right: 15px;
+        }
+    }
+    @media only screen and (max-width: 801px) {
+        .big-cup {
+            width: 380px !important;
+            height: 380px !important;
+        }
+
+        .tabs ul {
+            gap: 15px;
+        }
+
+        .news .container {
+            gap: 30px;
+        }
+
+        .news-contact-email{
+            min-width: 200px;
+        }
+    }
+    @media only screen and (max-width: 801px) {
+        .big-cup {
+            width: 360px !important;
+            height: 360px !important;
+        }
+        .news .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .news-banner .container {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .news-banner a {
+            font-size: 15px;
+        }
+        .news-banner h5 {
+            min-width: 250px;
+        }
+
+    }
+}

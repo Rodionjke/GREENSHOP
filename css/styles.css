@@ -395,8 +395,6 @@ header .header-dropdown {
 .main-banner .container{
     background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
     padding-left: 43px;
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 46px;
 }
 
@@ -404,6 +402,7 @@ header .header-dropdown {
     max-width: 693px;
     margin-bottom: 85px;
     padding-top: 68px;
+    padding-left: 1px;
 }
 
 .main-title {
@@ -460,6 +459,7 @@ header .header-dropdown {
     display: inline-flex;
     height: 450px;
     align-items: end;
+    padding-right: 10px;
 }
 .big-cup{
     width: 100%;
@@ -581,6 +581,7 @@ header .header-dropdown {
 }
 .sort-part:after{
     background-image: url("../images/Arrow-Down2.svg");
+    background-repeat: no-repeat;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -1264,7 +1265,9 @@ header .header-dropdown {
     position: fixed;
     z-index: 10;
     display: flex;
-    animation: fade-away 6s forwards;
+    justify-content: center;
+    align-items: center;
+    animation: fade-away 2s forwards;
 
 }
 .preloader-background:before{
@@ -1272,12 +1275,12 @@ header .header-dropdown {
     height: 35px;
     width: 150px;
     display: flex;
-    transform: scale(200%);
+    transform: translate(-50%, -50%) scale(200%);
     content: "";
     position: absolute;
     top: 50%;
     left: 50%;
-    animation: preloader1 6s;
+    animation: preloader1 2s;
 }
 @keyframes preloader1 {
 
@@ -1332,7 +1335,7 @@ header .header-dropdown {
         position: absolute;
         top: 50%;
         left: 50%;
-        rotate: 360deg;
+        scale: 2;
     }
     60%{
         background-image: url("../images/Logo5.svg");
@@ -1394,4 +1397,55 @@ header .header-dropdown {
         opacity: 0;
         display: none;
     }
+}
+.carousel-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.owl-carousel .owl-nav button.owl-prev{
+    background-image: url("../images/arrow-left-solid.svg");
+    background-repeat: no-repeat;
+    display: inline-flex;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -34px;
+    top: 50%;
+}
+.owl-carousel .owl-nav button.owl-next{
+    background-image: url("../images/arrow-right-solid.svg");
+    background-repeat: no-repeat;
+    display: inline-flex;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+.owl-dots{
+    display: inline-flex;
+    gap: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 7px;
+
+}
+.owl-carousel button.owl-dot {
+    background-image: url("../images/circle-regular.svg");
+    display: inline-flex;
+    content: "";
+    width: 10px;
+    height: 10px;
+
+}
+.owl-carousel button.owl-dot.active {
+    background-image: url("../images/circle-solid.svg");
+    display: inline-flex;
+    content: "";
+    width: 10px;
+    height: 10px;
+
 }
