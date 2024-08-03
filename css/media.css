@@ -107,6 +107,33 @@
         padding: 11px 11px;
     }
 }
+@media only screen and (max-width: 885px){
+    .product-block{
+        justify-content: center;
+    }
+    .summer-collection .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .news .container{
+        gap: 65px;
+    }
+    .news-cards:after {
+        right: -35px;
+    }
+    .news-banner h5{
+        align-items: center;
+        max-width: 200px;
+    }
+    .news-contact-address:before {
+        width: 35px;
+    }
+    .tabs-container {
+        gap: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
 @media only screen and (max-width: 835px) {
     .lower-title {
         font-size: 14px;
@@ -221,8 +248,37 @@
         bottom: 80px;
         left: -10px;
     }
+    .card-collection article{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-collection img{
+        width: 100%;
+        height: auto;
+    }
+    .card-date, .card-title, .card-description {
+        font-size: 16px;
+    }
+    .pdn-lft{
+        padding: 15px;
+    }
+    .blog-description{
+        font-size: 16px;
+    }
 }
 @media only screen and (max-width: 431px) {
+    .modal{
+        padding: 52px 85px 40px;;
+    }
+    .modal input, .modal button, .social-links {
+        width: 270px;
+    }
+    .hide-img:before {
+        right: 10px;
+    }
+    .input-password a:active:before{
+        right: 10px;
+    }
     @keyframes preloader1 {
         10% {
             background-image: url("../images/Logo9.svg");
@@ -462,6 +518,9 @@
         justify-content: center;
         margin-bottom: 80px;
             }
+    .list-of-categories li{
+        min-width: 90px;
+    }
     .list-of-categories a {
         font-size: 14px;
             }
@@ -479,7 +538,7 @@
         font-size: 14px;
             }
     .list-of-categories li {
-        min-width: 88px;
+        min-width: 90px;
         min-height: 42px;
             }
     .sort-part {
@@ -494,7 +553,7 @@
             }
     .product-variants {
         flex-direction: column;
-        padding: 0 15px;
+        padding: 0 30px 20px;
             }
     .product-variants img {
         top: -45px;
@@ -511,8 +570,11 @@
             }
     .blog .container {
         background-color: #FBFBFB;
-        padding: 35px 15px 0 15px;
+        padding: 35px 30px 0;
             }
+    .blog-title{
+        font-size: 25px;
+    }
     .card-collection article {
         flex-direction: column;
         padding-bottom: 15px;
@@ -523,14 +585,18 @@
         margin-bottom: 20px;
             }
     .pdn-lft {
-        padding: 0 15px;
+        padding: 0 30px;
             }
     .card-date, .card-title, .card-description {
         margin-bottom: 12px;
+        font-size: 14px;
             }
     .blog {
         margin-bottom: 50px;
             }
+    .blog-description{
+        font-size: 14px;
+    }
     .news .container {
         gap: 50px;
             }
@@ -544,6 +610,7 @@
             }
     .news-banner .container {
         align-items: start;
+        padding: 25px 30px;
             }
     .news-form-block {
         display: flex;
@@ -566,15 +633,29 @@
     .news-form-description {
         text-align: center;
             }
+    .services-title{
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
     .our-services .container {
         display: flex;
         flex-wrap: wrap;
+        padding: 30px;
             }
     .our-services ul{
         margin-bottom: 50px;
             }
         }
 @media only screen and (max-width: 415px) {
+   .modal{
+       padding: 52px 75px 40px;
+   }
+    .hide-img:before{
+       right: 10px;
+   }
+    .input-password a:active:before{
+        right: 10px;
+    }
     .big-cup{
         height: 325px;
     }
@@ -583,13 +664,25 @@
         left: 25px;
     }
     .our-services .container{
-        padding: 33px 20px 33px;
+        padding: 33px 25px 33px;
     }
     .summer-collection-text{
-        padding: 0 15px;
+        padding: 0 30px;
+    }
+    .list-of-categories li {
+        min-width: 90px;
+    }
+    .blog-description{
+        font-size: 14px;
+    }
+    .card-date, .card-title, .card-description {
+        font-size: 14px;
     }
 }
 @media only screen and (max-width: 394px) {
+    .modal {
+        padding: 52px 65px 40px;
+    }
     .owl-dots{
         left: 45%;
     }
@@ -620,13 +713,25 @@
     .blog .container{
         padding: 35px 20px 0;
     }
+    .our-services .container{
+        padding: 33px 30px;
+    }
+    .services-options{
+        font-size: 13px;
+    }
+    .blog-description{
+        font-size: 14px;
+    }
+    .card-date, .card-title, .card-description {
+        font-size: 14px;
+    }
 }
 @media only screen and (max-width: 391px) {
     .list-of-categories ul{
         gap: 10px;
     }
     .product-variants{
-        padding: 0 30px;
+        padding: 0 30px 20px;
     }
     .news-form-title{
         width: 75%;
@@ -647,8 +752,14 @@
     .our-services .container{
         padding: 33px 15px;
     }
+    .product-variants{
+        padding: 0 30px 20px;
+    }
 }
 @media only screen and (max-width: 376px){
+    .modal input, .modal button, .social-links {
+        width: 250px;
+    }
     .big-cup{
         height: 290px;
     }
@@ -661,12 +772,15 @@
     .list-of-categories ul{
         gap: 5px;
     }
+    .product-variants {
+        padding: 20px 30px;
+    }
     .product-variants img{
         width: 250px;
         height: auto;
     }
     .summer-collection-text{
-        width: 75%;
+        width: 100%;
     }
     .blog-title{
         font-size: 27px;
@@ -686,12 +800,33 @@
     }
 }
 @media only screen and (max-width: 361px){
+    .modal {
+        padding: 52px 55px 40px;
+    }
     .our-services .container{
         padding: 33px;
         gap: 10px;
     }
+    .product-variants{
+        padding: 0 30px 20px;
+    }
+    .blog-description{
+        font-size: 14px;
+    }
+    .card-date, .card-title, .card-description {
+        font-size: 14px;
+    }
 }
 @media only screen and (max-width: 321px){
+    .modal input, .modal button, .social-links {
+        width: 230px;
+    }
+    .hide-img:before{
+        right: 0;
+    }
+    .input-password a:active:before{
+        right: 0;
+    }
     header .header-dropdown{
         gap: 20px;
     }
@@ -733,6 +868,21 @@
     }
 }
 @media only screen and (max-width: 281px){
+    .modal{
+        padding: 52px 50px 40px;
+    }
+    .modal input, .modal button, .social-links {
+        width: 190px;
+    }
+    .hide-img:before{
+        right: 5px;
+    }
+    .input-password a:active:before{
+        right: 5px;
+    }
+    .social-links{
+        padding: 10px 15px;
+    }
     header .header-dropdown{
         gap: 10px;
     }
