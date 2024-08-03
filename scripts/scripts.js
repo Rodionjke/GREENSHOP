@@ -18,3 +18,8 @@ $('.owl-carousel').owlCarousel({
     }
 
 })
+$(document).ready(function() {
+    $('.burger').click(function() {
+        $('.header-dropdown').toggle('active');
+    });
+});

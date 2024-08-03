@@ -370,7 +370,13 @@ header .header-dropdown {
     min-width: 76px;
 }
 
-
+.login-btn span{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    font-family: "cera_promedium";
+}
 .login-btn {
     border-radius: 6px;
     background: #46a358;
@@ -379,10 +385,6 @@ header .header-dropdown {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    color: #fff;
-    font-family: "cera_promedium";
 }
 .login-btn:before {
     background-image: url("../images/Logout.svg");
@@ -399,7 +401,7 @@ header .header-dropdown {
 }
 
 .main-text {
-    max-width: 693px;
+    max-width: 640px;
     margin-bottom: 85px;
     padding-top: 68px;
     padding-left: 1px;
@@ -460,14 +462,19 @@ header .header-dropdown {
     height: 450px;
     align-items: end;
     padding-right: 10px;
+    max-width: 507px;
+    position: relative;
 }
 .big-cup{
     width: 100%;
 }
 .small-cup {
-    position: relative;
-    bottom: 14px;
-    left: 190px;
+    position: absolute;
+    bottom: 17px;
+    left: 55px;
+}
+.owl-carousel .owl-item img {
+    width: auto;
 }
 
 .product-section .container {
@@ -1263,7 +1270,7 @@ header .header-dropdown {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    z-index: 10;
+    z-index: 15;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1448,4 +1455,7 @@ header .header-dropdown {
     width: 10px;
     height: 10px;
 
+}
+.burger{
+    display: none;
 }
